@@ -12,7 +12,7 @@ public class Main2 {
 		
 		
 //		int[] copy = arr;
-//		
+		
 		arr[0] = 1000; // 참조형 변수를  두개의 배열 이 참조하고있기때문에 값도 같이 바뀐다.
 //		
 		for (int i = 0; i < copy.length; i++) {

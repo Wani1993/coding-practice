@@ -4,6 +4,9 @@ public class Main5 {
 	public static void main(String[] args) {
 		int[] arr = { 10, 20, 30 };
 		int[] temp = { 40, 50, 60 };
+		
+		Arrays.fill(temp, 100);
+		
 		int[] copy = Arrays.copyOf(arr, arr.length);  // 배열의 길이 늘이거나 줄일때 사용하는거
 		int[] arr2 = arr;
 		
