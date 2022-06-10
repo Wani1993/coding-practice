@@ -31,6 +31,8 @@ public class BookManage {
 			System.out.println("1.가격순으로(1.오름차순 2.내림차순)");
 			System.out.println("2.이름으로 찾기");
 			System.out.println("3.장르별로 찾기");		
+			System.out.println("4.상세보기");
+			System.out.println("5.프로그램종료");
 			
 			int menu = scan.nextInt();
 			// 가격순으로 정렬 (같을때는 이름순)
@@ -89,6 +91,13 @@ public class BookManage {
 						break;
 					}
 				}				
+			}
+			if (menu == 4) {
+				printNames();
+			}
+			if (menu == 5) {
+				System.out.println("프로그램 종료.");
+				break;
 			}
 		}
 	}

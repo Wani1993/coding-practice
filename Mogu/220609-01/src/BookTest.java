@@ -12,7 +12,7 @@ public class BookTest {
 		BookManage wow = new BookManage(a, b, c, d, e);
 	//	end.printNames();
 
-	//	a.getBookinpo();
+	//	a.getBookinpo();1
 	//	System.out.println(end.getTop().getName());
 		wow.start();
 		
