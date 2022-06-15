@@ -20,13 +20,23 @@
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Member {
+public class Member implements Comparable<Member> {
 	protected String name;
 	protected double miter;
 	protected double kg;
 	private double BMI;
 	
-		
+	
+	
+
+
+	@Override
+	public int compareTo(Member o) {  // 이부분을 어떻게 사용해야 되는지 ? 
+		int i = (int) (this.miter - o.miter);
+		return i;
+		//return (int) (this.miter - o.miter);
+	}
+
 	public Member() {
 		
 	}
@@ -36,6 +46,7 @@ public class Member {
 		this.miter = miter;
 		this.kg = kg;
 	}
+	
 
 	public String getName() {
 		return name;
@@ -49,7 +60,7 @@ public class Member {
 		return miter;
 	}
 
-	public void setCm(double miter) {
+	public void setmiter(double miter) {
 		this.miter = miter;
 	}
 
@@ -127,7 +138,6 @@ class Manage {
 		int a = scan.nextInt();
 		
 		for (int i = 0; i < a; i++) {
-			
 			m[i] = new Member();
 			System.out.println("이름을 입력하세요.");
 			Scanner si = new Scanner(System.in);
@@ -136,15 +146,14 @@ class Manage {
 			System.out.println("키를 입력하세요.");
 			Scanner sc = new Scanner(System.in);
 			Double miter = sc.nextDouble();
-			m[i].setCm(miter);
+			m[i].setmiter(miter);
 			System.out.println("몸무게를 입력하세요.");
 			Double kg = sc.nextDouble();
 			m[i].setKg(kg);
 			
-			m[i].setBmi();
-			
+			m[i].setBmi();							
 			}
-		}
+		}  // 중복 등록 안되게 하려면 어떻게 해야하는지 ?
 	
 	
 	public void getBiman() {
@@ -229,10 +238,17 @@ class Manage {
 			
 		}
 	}
+	
+	public void mWin() {
+		Arrays.sort(m);
+		for (int i = 0; i < m.length; i++) {
+			System.out.print(m[i] + " ");
+		}
+		
+	}
 
 	
 }
-
 
 
 
