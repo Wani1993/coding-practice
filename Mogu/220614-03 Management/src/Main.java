@@ -4,7 +4,7 @@ public class Main {
 		
 		ho.beginIng();
 		
-		
+		ho.mWin();
 	
 		
 	}

@@ -18,6 +18,7 @@
 // 정상 : 18.5 이상 - 23 미만
 // 저체충 : 18.5 이하
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.Scanner;
 
 public class Member implements Comparable<Member> {
@@ -125,6 +126,23 @@ public class Member implements Comparable<Member> {
 	
 }
 
+class WeightComparator implements Comparator<Member> {  // 오름차순으로 정렬하는 방법 ?
+
+	@Override
+	public int compare(Member o1, Member o2) {
+		return (int) (o1.getKg() - o2.getKg());
+	}
+	
+}
+
+class NameComparator implements Comparator<Member> {
+
+	@Override
+	public int compare(Member o1, Member o2) {
+		return o1.getName().compareTo(o2.getName());
+	}
+	
+}
 
 
 
@@ -241,13 +259,31 @@ class Manage {
 	
 	public void mWin() {
 		Arrays.sort(m);
+		
 		for (int i = 0; i < m.length; i++) {
-			System.out.print(m[i] + " ");
+			if (m[i] != null) {
+			System.out.print(m[i].getName() + " ");
+			}
+		}		
+	}
+	
+	public void sortMem() {
+		WeightComparator a = new WeightComparator();
+//		for (int i = 0; i < m.length; i++) {
+//			int result = a.compare(m[i], m[i+1]);
+//		}
+		for (int i = 0; i < m.length; i++) {
+			if (m[i] != null) {
+				Arrays.sort(m, a);
+				System.out.println(m[i].getName());
+			}
 		}
+//		Arrays.sort(m, a);
+//		System.out.println(m[0].getName());
+//		System.out.println(m[1].getName());
 		
 	}
-
-	
+		
 }
 
 
