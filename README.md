@@ -37,7 +37,7 @@
 * 반복문
   - [구구단 만들기](0523/Gugudan2.java)
   - while문 =>[예제1](0523/Loop1.java), [예제2](0523/Loop2.java), [예제3](0523/Loop3.java)
-  - for문 =>[예제1](0523/LoopFor1.java), [예제2](0523/LoopFor2.java)
+  - for문 =>[예제1](0523/LoopFor1.java), [예제2](0523/LoopFor2.java) [예제3](0523/Sum.java)
 
 
 
