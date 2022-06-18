@@ -5,13 +5,13 @@
 
 [link keyword][id]
 
-[id]: URL "Optional Title here"
+[id]: <https://github.com/Wani1993/coding-practice/blob/a3c19e2b0f583a1c416abc6b4aba243382c04b53/0518/Add.java> "220518"
 
 // code
 Link: [Google][googlelink]
 
 [googlelink]: https://google.com "Go google"
 
-<https://github.com/Wani1993/coding-practice/blob/a3c19e2b0f583a1c416abc6b4aba243382c04b53/0518/Add.java>
+
 
 
