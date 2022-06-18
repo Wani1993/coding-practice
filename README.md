@@ -31,6 +31,7 @@
   - [char type](0519/CharType.java)
   - [변수 대입을 통한 출력](0520/TestString.java)
   - [문자열 길이](0520/TestString2.java)
+  - [문자열 비교](0520/StringEquals.java)
   - [문자열 비교를 통한 출력](0520/Umbrella.java)
 
 
