@@ -39,6 +39,7 @@
   - while문 =>[예제1](0523/Loop1.java), [예제2](0523/Loop2.java), [예제3](0523/Loop3.java)
   - for문 =>[예제1](0523/LoopFor1.java), [예제2](0523/LoopFor2.java) [예제3](0523/Sum.java)
   - [반복문을 이용한 자판기 프로그램](0523/ex4.java)
+  - [반복문을 이용한 문자열 갯수구하기](0523/ex6.java)
 
 
 
