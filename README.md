@@ -5,6 +5,7 @@
 * 변수의 연산
   - [변수의 합](0518/Add.java)
   - [변수의 합2](0518/Add2.java)
+  - [복합연산자](0519/InDec.java)
   - [입력을 통한 넓이구하기](0518/CircleArea.java)
   - [예제1](0518/Ex.java)
   - [예제2](0518/Ex1.java)
@@ -27,5 +28,7 @@
 
 * 기본적인 출력방법
   - [문자열 출력](0518/Hello.java)
+  - [char type](0519/CharType.java)
+  - 
 
 
