@@ -44,10 +44,10 @@
   - [피보나치수열 만들기](0524/prc1.java)
   - [PIZZ BUZZ 만들기](0524/prc3.java)
 
-* 이중 반복문
-   -[구구단 만들기](0525/Gugudan.java)
-   -for문 =>[예제1](0525/Loop2D.java), [예제2](0525/Loop2D2.java), [예제3](0525/Loop2D3.java)
-   -대망의 별찍기! [별찍기 예시](0525/prc1.java)
+* 이중 반복문 
+  - [구구단 만들기](0525/Gugudan.java)
+  - for문 =>[예제1](0525/Loop2D.java), [예제2](0525/Loop2D2.java), [예제3](0525/Loop2D3.java)
+  - 대망의 별찍기! [별찍기 예시](0525/prc1.java)
 
 
 
