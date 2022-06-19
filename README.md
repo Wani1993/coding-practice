@@ -38,8 +38,11 @@
   - [구구단 만들기](0523/Gugudan2.java)
   - while문 =>[예제1](0523/Loop1.java), [예제2](0523/Loop2.java), [예제3](0523/Loop3.java)
   - for문 =>[예제1](0523/LoopFor1.java), [예제2](0523/LoopFor2.java) [예제3](0523/Sum.java)
+  - do while문 =>[예제1](0524/DoWhile.java), [예제2](0524/LetterGame.java), [예제3]
   - [반복문을 이용한 자판기 프로그램](0523/ex4.java)
   - [반복문을 이용한 문자열 갯수구하기](0523/ex6.java)
+  - [피보나치수열 만들기](0524/prc1.java)
+  - [PIZZ BUZZ 만들기](0524/prc3.java)
 
 
 
