@@ -43,6 +43,7 @@
   - [반복문을 이용한 문자열 갯수구하기](0523/ex6.java)
   - [피보나치수열 만들기](0524/prc1.java)
   - [PIZZ BUZZ 만들기](0524/prc3.java)
+  - [Switch문](0525/DaysInMonth.java)
 
 * 이중 반복문 
   - [구구단 만들기](0525/Gugudan.java)
