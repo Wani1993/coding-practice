@@ -18,8 +18,8 @@ public class Main {
 			System.out.println("오른쪽 입력");
 			int right = scan.nextInt();
 		
-			int result = left / right;
-			System.out.println(result);
+		//	int result = left / right;
+		//	System.out.println(result);
 			
 			if(right != 0) {
 				System.out.println("나눈 몫: " + (left / right));

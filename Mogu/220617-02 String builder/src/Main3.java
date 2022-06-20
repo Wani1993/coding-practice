@@ -5,22 +5,24 @@ public class Main3 {
 		String longLine = "apple banana carrot donut";
 		
 		StringTokenizer st = new StringTokenizer(longLine, " "); // 왼쪽은 짤라내고자 하는 문자열, 오른쪽은 기준이 되는 문자열
-//		st.hasMoreTokens(); // 잘라 냈을때 있는지 확인하는 메소드
-//		String a = st.nextToken();
-//		System.out.println(a);
+		st.hasMoreTokens(); // 잘라 냈을때 있는지 확인하는 메소드
+		String a = st.nextToken(); // 가져오려면 nextToKen()을 호출 해야한다.
+		String b = st.nextToken();
+		String c = st.nextToken();
+		System.out.println(b);
 		
-		while (st.hasMoreTokens()) {
-			System.out.println(st.nextToken());
-		}
-		
+//		while (st.hasMoreTokens()) {
+//			System.out.println(st.nextToken());
+//		}
+//		
 		
 		
 //		for(int i = 13; i <= 18; i++) {
 //			System.out.print(longLine.charAt(i));
 //		}
 //		
-//		String[] split = longLine.split(" ");
-//		System.out.println(split[2]);
+		String[] split = longLine.split(" ");
+		System.out.println(split[2]);
 		
 	}
 } 
