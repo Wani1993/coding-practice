@@ -22,8 +22,9 @@ public class Main10 {
 					System.out.println(list);
 				} else if(a == 2) {  // 고객에게 과일 주기(제일 앞에거부터 줌)
 					if(list.size() > 0) {
-						System.out.println(list.get(0));
+						System.out.println(list.get(0) + " " + "드릴게용!");
 						list.remove(0);
+						System.out.println("남은과일 : " + list);
 					} else {
 						System.out.println("매진이용");
 					}
@@ -33,6 +34,7 @@ public class Main10 {
 						Scanner sc = new Scanner(System.in);
 						String pp = sc.nextLine();
 						list.add(pp);
+						System.out.println("현재 진열된 과일 수: " + list.size());
 					} else {
 						System.out.println("진열대가 꽉찼습니다.");
 						continue what;

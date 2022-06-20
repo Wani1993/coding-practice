@@ -25,13 +25,13 @@ public class Main4 {
 //		System.out.println(iterator.next());
 		
 		
+		System.out.println(list);
 		
 		
+		System.out.println(list.contains(new String("banana")));
+		list.remove("banana");  // 동등한 원소 하나를 찾아서 지우기
 		
-//		System.out.println(list.contains(new String("banana")));
-//		list.remove("banana");  // 동등한 원소 하나를 찾아서 지우기
-//		
-//		System.out.println(list);
+		System.out.println(list);
 		
 		// 위의 리스트에서 5글자 문자열만 찾아서 지우기
 //		for (String s : list) {  // 포이치 문은 변경하는데 적합하지 않음
@@ -39,7 +39,7 @@ public class Main4 {
 //				list.remove(s);
 //			}
 //		}
-		System.out.println(list);
+		
 		
 			
 	}
