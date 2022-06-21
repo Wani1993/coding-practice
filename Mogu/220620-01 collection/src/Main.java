@@ -18,17 +18,17 @@ public class Main {
 //		System.out.println(list.get(1));
 //		System.out.println(list.get(3));
 		
-		for (int i = 0; i < list.size(); i++) {  // 순서대로 표시하기
-			System.out.println(list.get(i)); 
-		}
+//		for (int i = 0; i < list.size(); i++) {  // 순서대로 표시하기
+//			System.out.println(list.get(i)); 
+//		}
 //		
 //		for (int i = list.size() - 1; i >= 0; i--) {  // 역순으로 표시하기
 //			System.out.println(list.get(i));
 //		}
 		
-//		for (Object o : list) {   // for each 문을 이용한 모든 원소 표시하기
-//			System.out.println(o);
-//		}
+		for (Object o : list) {   // for each 문을 이용한 모든 원소 표시하기
+			System.out.println(o);
+		}
 		
 	}
 }

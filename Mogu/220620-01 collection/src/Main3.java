@@ -33,7 +33,6 @@ public class Main3 {
 		System.out.println(list.size() == 0);
 		list.add(0, 15);
 		System.out.println(list.isEmpty());
-		System.out.println(list);
 		
 		
 	}

@@ -19,7 +19,7 @@ public class Main5 {
 		
 		System.out.println(list.containsAll(Arrays.asList(10, 20)));  // containsAll 은 안에 원소가 다 있는지 확인하는것
 		
-		List<Integer> sub = list.subList(0, 4); // 리스트 복사하기 subList(시작하는 인덱스, 마지막 인덱스)
+		List<Integer> sub = list.subList(0, 3);
 		System.out.println(sub);
 		System.out.println(list);
 	}

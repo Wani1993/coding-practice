@@ -11,7 +11,7 @@ public class Main6 {
 		System.out.println(list);
 		
 		int index = Collections.binarySearch(list, 8); // Collections.binarySearch(객체, 원하는 원소) 입력한 원소의 인덱스를 구하는 것
-		System.out.println("8의 인덱스: " + index);
+		System.out.println("8의 인덱스: " + index);   // 조건은 중복이 없고 정렬이 되 있어야한다.
 		
 		Collections.reverse(list);  // 원소의 순서를 역순으로 바꿔주는 것
 		System.out.println(list);
