@@ -42,7 +42,7 @@ public class ConsolePresenter {
 	
 	public void add() {
 		Scanner scan = new Scanner(System.in);
-		System.out.println("날짜? yyyy-MM-dd 예)2022-06-21");
+		System.out.println("날짜?");
 		Scanner sc = new Scanner(System.in);
 		double date = scan.nextDouble();
 		System.out.println("제목?");
@@ -69,7 +69,8 @@ public class ConsolePresenter {
 		double date = scan.nextDouble();
 		
 		System.out.println("내용?");
-		String text = scan.nextLine();
+		Scanner sc = new Scanner(System.in);
+		String text = sc.nextLine();
 		
 		manager.edit(date, text);
 	}
