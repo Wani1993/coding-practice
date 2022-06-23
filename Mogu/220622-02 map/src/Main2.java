@@ -1,4 +1,5 @@
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
@@ -17,25 +18,28 @@ public class Main2 {
 		
 		System.out.println(map.toString());
 		
+		
+	
+		
+		
 		Set<Entry<String, Integer>> entrySet = map.entrySet();
 		for (Entry<String, Integer> e : entrySet) {
 			System.out.println(e.getKey() + " = " + e.getValue());
 		}
 		
-		
-		
-		
-		
-		
+		System.out.println("---------------------------------------");
+				
 		
 		Set<String> keySet = map.keySet();  // set은 순환할수있도록 만들수있으니 key 값을 set리스트에 담은뒤
-//		Iterator<String> iter = keySet.iterator();  // Iterator 를 이용해서 값을 하나하나 집어넣어 확인한다.
-//		while (iter.hasNext()) {
-//			String key = iter.next();
-//			Integer value = map.get(key);
-//			
-//			System.out.println(key + " = " + value);
-//		}
+		Iterator<String> iter = keySet.iterator();  // Iterator 를 이용해서 값을 하나하나 집어넣어 확인한다.
+		while (iter.hasNext()) {
+			String key = iter.next();
+			Integer value = map.get(key);
+			
+			System.out.println(key + " = " + value);
+		}
+		
+		System.out.println("---------------------------------------");
 		
 		for(String key : keySet) {
 			System.out.println(key + " = " + map.get(key));

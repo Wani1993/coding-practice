@@ -74,7 +74,7 @@ public class Main8 {
 		};
 		
 	
-		Set<Book> treeByprice = new TreeSet<>(com);
+		Set<Book> treeByprice = new TreeSet<>(com);  // set은 순서를 안따진다. 
 		treeByprice.add(b1);
 		treeByprice.add(b2);
 		treeByprice.add(b3);
