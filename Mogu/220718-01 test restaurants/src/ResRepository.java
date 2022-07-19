@@ -118,6 +118,28 @@ public class ResRepository {
 		
 	}
 	
+					
+	public int update(Restaurant res) throws SQLException {
+		String query = "UPDATE Restaurants SET businessName = '" 
+				+ res.getBusinessName() + "', number = '" 
+				+ res.getNumber() + "', address = '" 
+				+ res.getAddress() + "' WHERE companyNum = " 
+				+ res.getCompanyNum();
+		
+		Connection conn = null;
+		Statement stmt = null;
+		
+		try {
+			conn = DBUtil.getConnection();
+			stmt = conn.createStatement();
+			
+			return stmt.executeUpdate(query);
+		} finally {
+			DBUtil.closeStmt(stmt);
+			DBUtil.closeConn(conn);
+		}
+		
+	}
 	
 
 	public static void main(String[] args) {
@@ -133,9 +155,11 @@ public class ResRepository {
 			
 //			System.out.println(repo.selectByName("도연정"));
 			
-			result = repo.delete(6);
-			System.out.println(result + "된다");
+//			result = repo.delete(6);
+//			System.out.println(result + "된다");
 			
+			result = repo.update(repo.selectByName("도연정"));
+			System.out.println((result == 1) + "와우");
 			
 		} catch (SQLException e) {
 			e.printStackTrace();

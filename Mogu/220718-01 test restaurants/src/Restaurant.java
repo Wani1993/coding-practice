@@ -4,6 +4,11 @@ public class Restaurant {
 	private String number;
 	private String address;
 	
+	
+	public Restaurant() {
+		super();
+	}
+
 	public Restaurant(String businessName, String number, String address) {
 		super();
 		this.businessName = businessName;
@@ -56,6 +61,8 @@ public class Restaurant {
 		return "restaurant [companyNum=" + companyNum + ", businessName=" + businessName + ", number=" + number
 				+ ", address=" + address + "]";
 	}
+
+
 	
 	
 
