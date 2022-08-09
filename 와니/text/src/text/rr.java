@@ -1,5 +1,7 @@
 package text;
 
-public class rr {
+import java.util.Random;
 
+public class rr {
+	Random ran = new Random();
 }

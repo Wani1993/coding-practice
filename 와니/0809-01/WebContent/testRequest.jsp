@@ -7,12 +7,11 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<form action="./personresult.jsp">
-		<!-- value가 아니라 name을 사용해야 불러올수있다. -->
-		<label>이름<input type="text" name="name" /></label>
-		<label>나이<input type="number" name="age" /></label>
+	<p>자바 웹 어플리케이션은 각각의 고유한 context root 경로를 가집니다.</p>
+	<p><%= request.getContextPath() %></p>
+	
+	<form action="<%= request.getContextPath() %>/testRequest.jsp">
 		<input type="submit"/>
 	</form>
-
 </body>
 </html>

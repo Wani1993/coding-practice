@@ -7,12 +7,13 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<form action="./personresult.jsp">
-		<!-- value가 아니라 name을 사용해야 불러올수있다. -->
-		<label>이름<input type="text" name="name" /></label>
-		<label>나이<input type="number" name="age" /></label>
+	<form action="to.jsp">
+		<select name="alphabet">
+			<option value="a">A</option>
+			<option value="b">B</option>
+			<option value="c">C</option>
+		</select>
 		<input type="submit"/>
 	</form>
-
 </body>
 </html>
