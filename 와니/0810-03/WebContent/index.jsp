@@ -22,15 +22,11 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>DB에 사람넣기</title>
 </head>
 <body>
-	<form action="./input">
-		<label>이름<input type="text" name="name"/></label>
-		<label>나이<input type="number" name="age"/></label>
-		<input type="submit" value="등록"/>
-		<a href="./person" target="blank">목록보기</a>
-	</form>
+		<a href="insert.jsp">사람등록</a>
+		<a href="./person">목록보기</a>
 
 </body>
 </html>

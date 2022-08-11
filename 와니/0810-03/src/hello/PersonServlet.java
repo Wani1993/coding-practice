@@ -3,6 +3,7 @@ package hello;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.List;
+import java.util.Map;
 
 import javax.security.auth.message.callback.PrivateKeyCallback.Request;
 import javax.servlet.ServletException;
@@ -18,20 +19,19 @@ public class PersonServlet extends HttpServlet{
 		resp.setCharacterEncoding("utf-8");
 		resp.setHeader("Content-type", "text/plain; charset=utf-8");
 		PersonDAO dao = new PersonDAO();
+		
+		
 		List<Person> list = null;
+		Map<String, String> nameError = null;
 		try {
 			list = dao.getPerson();
-			System.out.println(list.get(0).getName());
-			System.out.println(list.get(0).getAge());
-			
-			PrintWriter pw = resp.getWriter();
+			PersonValidator validator = new PersonValidator();
 			for(int i = 0; i < list.size(); i++) {
-				pw.println("이름: " + list.get(i).getName() + "   " + " 나이: " + list.get(i).getAge());
+			 nameError = validator.isValidName(list.get(i).getName());
 			}
-			
-			pw.flush();
-			
-			//req.getRequestDispatcher("result.jsp").forward(req, resp);
+//			resp.sendRedirect(req.getContextPath() + "/result.jsp");
+			req.setAttribute("list", list);
+			req.getRequestDispatcher("result.jsp").forward(req, resp);
 		} catch (Exception e1) {
 			e1.printStackTrace();
 		}
