@@ -15,8 +15,8 @@
 	<c:if test="${ errors.duplicateId }">이미 사용중인 아이디입니다.</c:if>
 </p>
 <p> 
-	이름:<br/><input type="text" name="name" valu="${ param.name }">
-	<c:if test="${ error.name }">이름을 입력하세요</c:if> 
+	이름:<br/><input type="text" name="name" value="${ param.name }">
+	<c:if test="${ errors.name }">이름을 입력하세요</c:if> 
 </p>
 <p>
 	암호:<br/><input type="password" name="password">
